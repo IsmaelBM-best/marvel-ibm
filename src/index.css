@@ -185,3 +185,44 @@ strong {
   cursor: pointer;
   border: 3px solid black;
 }
+
+/* Resposive */
+
+@media (max-width: 414px) {
+  nav {
+    justify-content: center;
+    gap: 100px;
+  }
+  .logo {
+    width: 50px;
+  }
+  .buttons-nav {
+    width: 60px;
+    font-size: 12px;
+  }
+  .video-image {
+    flex-direction: column;
+  }
+  .cards {
+    grid-template-columns: auto;
+  }
+  .pagination {
+    gap: 5px
+  }
+  .pagination a {
+    padding: 1px;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  .end {
+    padding-right: 20px;
+    display: flex;
+    gap: 5px;
+  }
+  .bell {
+    font-size: 20px;
+  }
+  .tool {
+    font-size: 20px;
+  }
+}

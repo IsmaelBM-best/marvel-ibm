@@ -10,6 +10,7 @@ const App = () => {
         <nav>
           <div className="start">
             <img
+              className="logo"
               src="https://upload.wikimedia.org/wikipedia/commons/9/90/Marvel_Studios_logo.jpg"
               alt=""
               width="210px"

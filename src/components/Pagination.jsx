@@ -44,10 +44,14 @@ const Pagination = () => {
           />
           <div className="info">
             <div className="box">
-              <p>Comics: <strong>{item.comics.available}</strong></p>
+              <p>
+                Comics: <strong>{item.comics.available}</strong>
+              </p>
             </div>
             <div className="box">
-              <p>Peliculas: <strong>{item.stories.available}</strong></p>
+              <p>
+                Peliculas: <strong>{item.stories.available}</strong>
+              </p>
             </div>
           </div>
         </div>
@@ -57,6 +61,16 @@ const Pagination = () => {
 
   return (
     <>
+      <div>
+        <ReactPaginate
+          pageCount={Math.ceil(totalItems / itemsPerPage)}
+          pageRangeDisplayed={5}
+          marginPagesDisplayed={0}
+          onPageChange={handlePageChange}
+          containerClassName={"pagination"}
+          activeClassName={"active"}
+        />
+      </div>
       <div>
         <div className="cards">{renderItems()}</div>
       </div>
