@@ -10,7 +10,7 @@ const Pagination = () => {
 
   useEffect(() => {
     fetchData();
-  }, [currentPage]);
+  });
 
   const fetchData = async () => {
     try {
